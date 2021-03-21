@@ -1,0 +1,12 @@
+.GameBoard {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.GameBoard__container {
+    display: flex;
+    max-width: 720px;
+    height: 430px;
+    flex-wrap: wrap;
+}
