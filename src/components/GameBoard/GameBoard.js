@@ -12,7 +12,7 @@ const GameBoard = ({ questionsCount }) => {
         {Array.from(Array(tiles)).map((_, i) => {
           return i % 2 === 0 ? (
             <>
-              {/* TARGET will returns TRUE / FALSE */}
+              {/* TARGET will return TRUE / FALSE */}
               <Tile
                 id={i}
                 key={i}
@@ -23,7 +23,7 @@ const GameBoard = ({ questionsCount }) => {
             </>
           ) : (
             <>
-              {/* TARGET will returns TRUE / FALSE */}
+              {/* TARGET will return TRUE / FALSE */}
               <Tile
                 id={i}
                 key={i}

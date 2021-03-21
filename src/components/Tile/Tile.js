@@ -3,12 +3,13 @@ import "./Tile.css";
 
 const Tile = ({ theme, questionNumber, id, target }) => {
   return (
-    /* Stting the color of the Tile based on the theme prop value */
+    /* Setting the color of the Tile based on the theme prop value */
     <div className={`Tile ${theme === "Dark" ? "Tile__Dark" : "Tile__Light"}`}>
-      {target ? (
-        <>
-          <div className="Tile__label">{questionNumber}</div>
-         {/*  <div
+      {/* Adding lables to specified tiles */}
+      <div className="Tile__label">{target ? questionNumber : ""}</div>
+
+      {/* Control Avatar Location based on Answers stste */}
+      {/*  <div
             style={{
               display: "flex",
               alignItems: "center",
@@ -17,10 +18,6 @@ const Tile = ({ theme, questionNumber, id, target }) => {
             <Avatar />
             <p>محمد أحمد </p>
           </div> */}
-        </>
-      ) : (
-        ""
-      )}
     </div>
   );
 };
