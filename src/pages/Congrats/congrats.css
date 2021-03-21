@@ -1,0 +1,50 @@
+.congrats {
+    display: flex;
+    justify-content: center;
+}
+
+.congrats__container {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 740px;
+    height: 405px;
+}
+
+.congrats__msg {
+    text-align: center;
+    font: normal normal bold 25px/47px Cairo;
+    letter-spacing: 0px;
+    color: #000000;
+    font-size: 25px;
+    width: 73%;
+}
+
+.congrats__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: normal normal bold 22px/30px 'Segoe UI';
+    letter-spacing: 0px;
+    color: #040000;
+}
+
+.congrats__score {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+.congrats__score p {
+    width: 54px;
+    text-align: center;
+    font: normal normal bold 22px/30px 'Segoe UI';
+    letter-spacing: 0px;
+    color: #040000;
+    size: 22px;
+}

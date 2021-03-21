@@ -1,12 +1,19 @@
+import { useEffect } from "react";
+import {Switch, Route} from "react-router-dom";
 import "./App.css";
-import { GameBoard } from "./components/GameBoard/GameBoard";
-import { Question } from "./components/Question/Question";
+
+// Importing pages 
+import {question} from "./pages/Question/question";
+import { congrats } from "./pages/Congrats/congrats";
 
 function App() {
+
   return (
     <div className="App">
-      <Question />
-      <GameBoard questionsCount={3} />
+      <Switch>
+        <Route exact path="/question" component={question} />
+        <Route exact path="/congrats" component={congrats} />
+      </Switch>
     </div>
   );
 }

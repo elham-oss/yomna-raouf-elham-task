@@ -1,0 +1,8 @@
+.Answers {
+    margin-top: 2em;
+}
+
+.Answers__container {
+    display: flex;
+    justify-content: space-between;
+}
